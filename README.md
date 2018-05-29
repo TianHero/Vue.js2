@@ -5,6 +5,7 @@ A vue-cli+webpack demo
 - node.js npm 必备的哦！ 
 - 本项目组件采用就近维护，一个组件一个文件夹，文件夹下面有本组件需要的图片资源，项目使用webpack build之后图片会以base64的形式加载,
 - 本项目使用的是less
+- 接口使用的node.js做的，所以如果使用npm run build 构建完项目的时候，需要启动一个node.js的服务器，同样配置好路由，简单来用这里运行直接npm run dev就行，没必要构建版本
 
 # 开始：
 # 安装依赖
