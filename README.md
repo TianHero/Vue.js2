@@ -8,6 +8,9 @@ A vue-cli+webpack demo
 - 接口使用的node.js做的，所以如果使用npm run build 构建完项目的时候，需要启动一个node.js的服务器，同样配置好路由，简单来用这里运行直接npm run dev就行，没必要构建版本
 - 没有使用vuex,后期会加入vuex，方便管理项目中的状态，避免传值过于复杂
 - Ajax请求后期会使用axios 代替 vue-resource
+- vue子组件修改父组件props传过来的值，如果该值是引用类型，则可以修改，并且能影响到父级
+- vue子组件修改父组件props传过来的基础类型，则报错，可用ES6的深拷贝解决Object.assign({},obj)，或者序列化一下，JSON.parse(JSON.stringify(obj))）这样可以修改，但是不能影响到父级
+- 让父级传给子级的基础类型，如果自己想修改，并要求父级也响应，可以让子组件emit一个事件，父组件内捕获这个事件，然后在父组件内执行相应的变化
 # 开始：
 # 安装依赖
 npm install  
